@@ -2,6 +2,11 @@
 
 class Plugink
 {
+    public static function echojson($data)
+    {
+        echo json_encode($data);
+    }
+
     public static function create_type_post($type_name, $singular, $plural, $data = [])
     {
         if (!post_type_exists('subs_types')) {

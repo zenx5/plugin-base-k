@@ -4,9 +4,9 @@
     "type": "package",
     "license": "MIT",
     "autoload": {
-        "psr-4": {
-            "Zenx5\\Plugink\\": "src/"
-        }
+        "files":[
+            "src/class_plugink.php"
+        ]
     },
     "authors": [
         {
