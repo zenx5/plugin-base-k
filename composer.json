@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Zenx5\\PluginK\\": "src/"
+            "Zenx5\\Plugink\\": "src/"
         }
     },
     "authors": [

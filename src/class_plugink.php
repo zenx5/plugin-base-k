@@ -1,6 +1,6 @@
 <?php
 
-class PluginK
+class Plugink
 {
     public static function create_type_post($type_name, $singular, $plural, $data = [])
     {
