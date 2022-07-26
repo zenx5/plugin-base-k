@@ -76,4 +76,20 @@ class Plugink
         }
         $wpdb->get_results($sql);
     }
+
+    public static function get_post_name($post_type, $id)
+    {
+        $post = new WP_Query([
+            'p' => $id,
+            'post_type' => $post_type
+        ]);
+
+        return $post->post->post_name;
+    }
+
+
+    public static function get_template($template_dir)
+    {
+        return __DIR__ . '/' . $template_dir;
+    }
 }
