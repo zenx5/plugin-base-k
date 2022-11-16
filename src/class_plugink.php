@@ -68,7 +68,7 @@ class Plugink
         global $wpdb;
         $sql = "";
         foreach ($tables as $tableName => $table) {
-            $sql = "CREATE TABLE IF NOT EXISTS `{$wpdb->prefix}$tableName ` (";
+            $sql = "CREATE TABLE IF NOT EXISTS `".$wpdb->prefix.$tableName."` (";
             foreach ($table as $field => $description) {
                 $sql .= " `$field` $description, ";
             }
